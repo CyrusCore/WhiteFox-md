@@ -89,6 +89,7 @@ const { state, saveState } = useSingleFileAuthState(global.authFile)
 const connectionOptions = {
   printQRInTerminal: true,
   browser: ['whitefox (multi device)', 'Chrome', '3.0'],
+  version: [2, 2204, 13],
   auth: state
 }
 
