@@ -116,7 +116,6 @@ ucapanWaktu = 'Good Night'//'Selamat Malam!'
 ┃✾ Hi, *${ucapanWaktu}* ${pushname2}!
 ┃✾ Limit *${limit} Left*
 ┃✾ Role *${role}*
-┃✾ Tier: *${isVip ? 'Vip' : 'No' || isMvp ? 'Mvp' : 'No' || isMvpp ? 'Mvp+' : 'No'}
 ┃✾ Level *${level}* 
 ┃✾ XP: *TOTAL ${exp} (${exp - min} / ${xp})*
 ┗━━
@@ -152,7 +151,7 @@ ucapanWaktu = 'Good Night'//'Selamat Malam!'
 ┃I Updated The Bot Or Change The
 ┃Hosting Provider  -AeroNetwork
 ┗━━━━━━━━━`.trim()
-let message = await prepareWAMessageMedia({ image: fs.readFileSync('./media/190308_White_Fox_Brand_Big.png')}, { upload: conn.waUploadToServer })
+let message = await prepareWAMessageMedia({ image: fs.readFileSync('./media/WhiteFoxLogo.png')}, { upload: conn.waUploadToServer })
 const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
          hydratedTemplate: {
