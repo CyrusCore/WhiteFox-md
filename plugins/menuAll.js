@@ -157,7 +157,7 @@ let handler = async (m, { conn, usedPrefix: _p, command }) => {
       level, limit, money, name, weton, week, date, dateIslamic, time, totalreg, rtotalreg, role,
       readmore: readMore
     }
-    let message = await prepareWAMessageMedia({ image: fs.readFileSync('./media/190308_White_Fox_Brand_Big.png')}, { upload: conn.waUploadToServer })
+    let message = await prepareWAMessageMedia({ image: fs.readFileSync('./media/WhiteFoxLogo.png')}, { upload: conn.waUploadToServer })
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
